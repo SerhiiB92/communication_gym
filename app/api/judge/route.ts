@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getScenario } from "@/lib/scenarios";
 import { buildJudgePrompt } from "@/lib/judgePrompt";
-import { generateJudgeReport } from "@/lib/gemini";
+import { generateJudgeReport } from "@/lib/llm";
 import { ChatMessage } from "@/lib/types";
 
 function extractJson(raw: string): string {

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getScenario } from "@/lib/scenarios";
 import { buildCharacterSystemPrompt } from "@/lib/promptBuilder";
-import { generateCharacterReply } from "@/lib/gemini";
+import { generateCharacterReply } from "@/lib/llm";
 import { ChatMessage } from "@/lib/types";
 
 export async function POST(req: NextRequest) {
